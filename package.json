@@ -1,8 +1,8 @@
 {
-  "name": "io.cordova.hellocordova",
-  "displayName": "HelloCordova",
+  "name": "ai.labml.app",
+  "displayName": "labml.ai",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "Monitor PyTorch & TensorFlow model training on mobile phones",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,18 +10,30 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "labml.ai Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "cordova": "^10.0.0",
+    "cordova-android": "^9.0.0",
     "cordova-browser": "^6.0.0",
+    "cordova-plugin-customurlscheme": "^5.0.2",
+    "cordova-plugin-safariviewcontroller": "^2.0.0",
     "cordova-plugin-whitelist": "^1.3.4"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-safariviewcontroller": {},
+      "cordova-plugin-customurlscheme": {
+        "URL_SCHEME": "ai.labml.app",
+        "ANDROID_SCHEME": "ai.labml.app",
+        "ANDROID_HOST": "dev-gt21oy8i.us.auth0.com",
+        "ANDROID_PATHPREFIX": "/cordova/ai.labml.app/callback"
+      }
     },
     "platforms": [
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }

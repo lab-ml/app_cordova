@@ -21,6 +21,12 @@
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
+        <icon background="@color/ic_launcher_background" density="mdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_mdpi.png" />
+        <icon background="@color/ic_launcher_background" density="hdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_hdpi.png" />
+        <icon background="@color/ic_launcher_background" density="xhdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_xhdpi.png" />
+        <icon background="@color/ic_launcher_background" density="xxhdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_xxhdpi.png" />
+        <icon background="@color/ic_launcher_background" density="xxxhdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_xxxhdpi.png" />
+        <resource-file src="res/icon/android/icon_launcher_background.xml" target="app/src/main/res/values/ic_launcher_background.xml" />
     </platform>
     <preference name="AndroidLaunchMode" value="singleTask" />
     <preference name="AndroidXEnabled" value="true" />

@@ -12,7 +12,7 @@ var app = {
         app.receivedEvent('deviceready');
 
         // Here, we redirect to the web site.
-        var targetUrl = "http://192.168.8.100:5000/cordova";
+        var targetUrl = "https://app.labml.ai/cordova";
         window.location.replace(targetUrl);
     },
     // Note: This code is taken from the Cordova CLI template.

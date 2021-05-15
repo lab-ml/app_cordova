@@ -15,7 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://192.168.8.100:5000" />
+    <allow-navigation href="https://app.labml.ai" />
     <platform name="android">
         <allow-intent href="market:*" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
@@ -27,11 +27,26 @@
         <icon background="@color/ic_launcher_background" density="xxhdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_xxhdpi.png" />
         <icon background="@color/ic_launcher_background" density="xxxhdpi" foreground="res/icon/android/icon_launcher_foreground.xml" src="res/icon/android/icon_launcher_xxxhdpi.png" />
         <resource-file src="res/icon/android/icon_launcher_background.xml" target="app/src/main/res/values/ic_launcher_background.xml" />
+
+        <splash src="res/screen/android/splash-ldpi.png" density="ldpi"/>
+        <splash src="res/screen/android/splash-mdpi.png" density="mdpi"/>
+        <splash src="res/screen/android/splash-hdpi.png" density="hdpi"/>
+        <splash src="res/screen/android/splash-xhdpi.png" density="xhdpi"/>
+        <splash src="res/screen/android/splash-xxhdpi.png" density="xxhdpi"/>
+        <splash src="res/screen/android/splash-xxxhdpi.png" density="xxxhdpi"/>
+
+        <splash src="res/screen/android/splash-night-ldpi.png" density="night-ldpi"/>
+        <splash src="res/screen/android/splash-night-mdpi.png" density="night-mdpi"/>
+        <splash src="res/screen/android/splash-night-hdpi.png" density="night-hdpi"/>
+        <splash src="res/screen/android/splash-night-xhdpi.png" density="night-xhdpi"/>
+        <splash src="res/screen/android/splash-night-xxhdpi.png" density="night-xxhdpi"/>
     </platform>
     <preference name="AndroidLaunchMode" value="singleTask" />
     <preference name="AndroidXEnabled" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="SplashScreenSpinnerColor" value="#eb6134" />
 </widget>
